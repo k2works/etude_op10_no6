@@ -35,6 +35,7 @@ docker-compose build
 ## アプリケーション開発
 ### アプリケーションを作成する前に
 + YARDによるドキュメント生成
++ YARDをRakeタスクに追加する
 
 **[⬆ back to top](#構成)**
 

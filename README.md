@@ -1,5 +1,10 @@
 # EtudeOp10No6
 
+[![CircleCI](https://circleci.com/gh/k2works/etude-op-10-no-6.svg?style=svg)](https://circleci.com/gh/k2works/etude_op10_no6)
+[![Code Climate](https://codeclimate.com/github/k2works/etude-op-10-no-6/badges/gpa.svg)](https://codeclimate.com/github/k2works/etude_op10_no6)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/k2works/etude_op10_no6/master/LICENSE.txt)
+
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/etude_op10_no6`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem

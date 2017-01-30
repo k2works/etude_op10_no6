@@ -37,6 +37,8 @@ docker-compose build
 + YARDによるドキュメント生成
 + YARDをRakeタスクに追加する
 
+### ボーリングゲームアプリケーション
+
 **[⬆ back to top](#構成)**
 
 ## アプリケーション配置

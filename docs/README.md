@@ -40,6 +40,8 @@ docker-compose build
 ### ボーリングゲームアプリケーション
 #### Step01
 
+#### Step02
+
 **[⬆ back to top](#構成)**
 
 ## アプリケーション配置

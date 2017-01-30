@@ -3,5 +3,8 @@ module EtudeOp10No6
     def get_score
       0
     end
+    def add (throw)
+
+    end
   end
 end

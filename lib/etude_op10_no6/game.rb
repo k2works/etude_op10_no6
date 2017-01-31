@@ -11,5 +11,9 @@ module EtudeOp10No6
     def add(pins)
       @its_score = pins + @its_score
     end
+
+    def score_for_frame(frame)
+      0
+    end
   end
 end

@@ -14,7 +14,7 @@ describe Game do
     g.add(5)
     g.add(4)
     expect(g.score).to eq(9)
-    expect(g.get_current_frame).to eq(1)
+    expect(g.get_current_frame).to eq(2)
   end
 
   it 'should be scored when four throws' do
@@ -25,6 +25,7 @@ describe Game do
     expect(g.score).to eq(18)
     expect(g.score_for_frame(1)).to eq(9)
     expect(g.score_for_frame(2)).to eq(18)
+    expect(g.get_current_frame).to eq(3)
   end
 
   it 'should be scored simple spare' do
@@ -41,6 +42,5 @@ describe Game do
     g.add(2)
     expect(g.score_for_frame(1)).to eq(13)
     expect(g.score_for_frame(2)).to eq(18)
-    expect(g.get_current_frame).to eq(2)
   end
 end

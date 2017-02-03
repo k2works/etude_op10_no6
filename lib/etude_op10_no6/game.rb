@@ -4,7 +4,7 @@ module EtudeOp10No6
       @its_score = 0
       @its_throws = Array.new(21,0)
       @its_current_throw = 0
-      @its_current_frame = 0
+      @its_current_frame = 1
       @first_throw = true
     end
 
@@ -26,9 +26,9 @@ module EtudeOp10No6
     def adjust_current_frame
       if @first_throw == true
         @first_throw = false
-        @its_current_frame += 1
       else
         @first_throw = true
+        @its_current_frame += 1
       end
     end
 

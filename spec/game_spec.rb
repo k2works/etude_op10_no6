@@ -7,6 +7,7 @@ describe Game do
   it 'should be scored when one throw' do
     g.add(5)
     expect(g.score).to eq(5)
+    expect(g.get_current_frame).to eq(1)
   end
 
   it 'should be scored when two throws' do

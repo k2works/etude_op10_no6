@@ -26,7 +26,7 @@ module EtudeOp10No6
         frame_score = first_throw + second_throw
         # スペアの得点計算には次のフレームの第１投が必要
         if frame_score == 10
-          score += frame_score + @its_throws[ball+2]
+          score += frame_score + @its_throws[ball]
         else
           score += frame_score
         end

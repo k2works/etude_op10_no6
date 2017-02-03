@@ -16,12 +16,14 @@ module EtudeOp10No6
       @its_score += pins
     end
 
-    def score_for_frame(frame)
+    def score_for_frame(the_frame)
       score = 0
       ball = 0
-      frame.downto(1) do |frame|
+      current_frame = 0
+      while current_frame < the_frame
         score += @its_throws[ball] + @its_throws[ball+1]
-        ball+=2
+        ball += 2
+        current_frame += 1
       end
       score
     end

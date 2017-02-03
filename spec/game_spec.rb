@@ -2,21 +2,20 @@ require "spec_helper"
 include EtudeOp10No6
 
 describe Game do
+  let(:g) { Game.new }
+
   it 'should be scored when one throw' do
-    g = Game.new
     g.add(5)
     expect(g.score).to eq(5)
   end
 
   it 'should be scored when two throws' do
-    g = Game.new
     g.add(5)
     g.add(4)
     expect(g.score).to eq(9)
   end
 
   it 'should be scored when four throws' do
-    g = Game.new
     g.add(5)
     g.add(4)
     g.add(7)
@@ -27,6 +26,5 @@ describe Game do
   end
 
   it 'should be scored simple spare' do
-    g = Game.new
   end
 end

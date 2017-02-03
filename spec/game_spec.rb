@@ -49,4 +49,12 @@ describe Game do
     expect(g.score).to eq(28)
     expect(g.get_current_frame).to eq(3)
   end
+
+  it 'should be scored perfect game' do
+    12.times do
+      g.add(10)
+    end
+    expect(g.score).to eq(300)
+    expect(g.get_current_frame).to eq(10)
+  end
 end

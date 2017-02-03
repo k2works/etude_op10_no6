@@ -44,7 +44,7 @@ module EtudeOp10No6
       while current_frame < the_frame
         if strike
           @ball += 1
-          score += 10 + next_tow_boalls
+          score += 10 + next_tow_balls
         else
           score += handle_second_throw
         end
@@ -58,7 +58,7 @@ module EtudeOp10No6
       @its_throws[@ball] == 10
     end
 
-    def next_tow_boalls
+    def next_tow_balls
       @its_throws[@ball] + @its_throws[@ball+1]
     end
 

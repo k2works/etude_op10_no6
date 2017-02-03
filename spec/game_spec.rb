@@ -55,6 +55,6 @@ describe Game do
       g.add(10)
     end
     expect(g.score).to eq(300)
-    expect(g.get_current_frame).to eq(10)
+    expect(g.get_current_frame).to eq(11)
   end
 end

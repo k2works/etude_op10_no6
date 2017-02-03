@@ -33,6 +33,7 @@ describe Game do
     g.add(7)
     g.add(3)
     expect(g.score_for_frame(1)).to eq(13)
+    expect(g.get_current_frame).to eq(2)
   end
 
   it 'should be scored simple frame after spare' do
@@ -42,5 +43,6 @@ describe Game do
     g.add(2)
     expect(g.score_for_frame(1)).to eq(13)
     expect(g.score_for_frame(2)).to eq(18)
+    expect(g.get_current_frame).to eq(3)
   end
 end

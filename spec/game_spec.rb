@@ -31,4 +31,13 @@ describe Game do
     g.add(3)
     expect(g.score_for_frame(1)).to eq(13)
   end
+
+  it 'should be scored simple frame after spare' do
+    g.add(3)
+    g.add(7)
+    g.add(3)
+    g.add(2)
+    expect(g.score_for_frame(1)).to eq(13)
+    expect(g.score).to eq(18)
+  end
 end

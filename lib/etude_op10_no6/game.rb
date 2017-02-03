@@ -34,7 +34,7 @@ module EtudeOp10No6
         @first_throw = true
         @its_current_frame += 1
       end
-      @its_current_frame = [10,@its_current_frame].min
+      @its_current_frame = [11,@its_current_frame].min
     end
 
     def score_for_frame(the_frame)

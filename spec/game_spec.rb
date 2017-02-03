@@ -22,7 +22,7 @@ describe Game do
     g.add(7)
     g.add(2)
     expect(g.score).to eq(18)
-    expect(g.score_for_frame(1)).to eq(1)
+    expect(g.score_for_frame(1)).to eq(9)
     expect(g.score_for_frame(2)).to eq(18)
   end
 end

@@ -23,7 +23,13 @@ module EtudeOp10No6
       while current_frame < the_frame
         first_throw = @its_throws[ball]
         second_throw = @its_throws[ball+1]
-        score += first_throw + second_throw
+        frame_score = first_throw + second_throw
+        # スペアの得点計算には次のフレームの第１投が必要
+        if frame_score == 10
+          score += frame_score + @its_throws[ball+2]
+        else
+          score += frame_score
+        end
         ball += 2
         current_frame += 1
       end

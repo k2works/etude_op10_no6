@@ -14,6 +14,7 @@ describe Game do
     g.add(5)
     g.add(4)
     expect(g.score).to eq(9)
+    expect(g.get_current_frame).to eq(1)
   end
 
   it 'should be scored when four throws' do

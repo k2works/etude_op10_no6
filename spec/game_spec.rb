@@ -91,4 +91,12 @@ describe Game do
     expect(g.score).to eq(133)
   end
 
+  it 'should be scored heart break game' do
+    11.times do
+      g.add(10)
+    end
+    g.add(9)
+    expect(g.score).to eq(299)
+  end
+
 end

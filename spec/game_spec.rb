@@ -57,4 +57,14 @@ describe Game do
     expect(g.score).to eq(300)
     expect(g.get_current_frame).to eq(11)
   end
+
+  it 'should be scored last strike after last frame spare' do
+    11.times do
+      g.add(0)
+    end
+    g.add(2)
+    g.add(8) # 10番目のフレームのスペア
+    g.add(10) # 配列の最後にストライク
+    expect(g.score).to eq(20)
+  end
 end

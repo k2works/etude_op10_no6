@@ -37,7 +37,7 @@ module EtudeOp10No6
     end
 
     def get_current_frame
-      1
+      1 + (@its_current_throw-1)/2
     end
   end
 end

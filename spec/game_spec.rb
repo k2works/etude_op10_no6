@@ -99,4 +99,13 @@ describe Game do
     expect(g.score).to eq(299)
   end
 
+  it 'should be scored tenth frame spare' do
+    9.times do
+      g.add(10)
+    end
+    g.add(9)
+    g.add(1)
+    g.add(1)
+    expect(g.score).to eq(270)
+  end
 end

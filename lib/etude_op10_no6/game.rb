@@ -72,10 +72,14 @@ module EtudeOp10No6
         @ball += 2
         score += 10 + next_ball
       else
+        score += two_balls_in_frame
         @ball += 2
-        score += frame_score
       end
       score
+    end
+
+    def two_balls_in_frame
+      @its_throws[@ball] + @its_throws[@ball+1]
     end
 
     def spare

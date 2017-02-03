@@ -40,4 +40,13 @@ describe Game do
     expect(g.score).to eq(18)
     expect(g.get_current_frame).to eq(3)
   end
+
+  it 'should be scored simple strike' do
+    g.add(10)
+    g.add(3)
+    g.add(6)
+    expect(g.score_for_frame(1)).to eq(19)
+    expect(g.score).to eq(28)
+    expect(g.get_current_frame).to eq(3)
+  end
 end

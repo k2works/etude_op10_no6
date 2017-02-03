@@ -47,17 +47,23 @@ module EtudeOp10No6
         if @first_throw == 10
           score += 10 + @its_throws[@ball] + @its_throws[@ball+1]
         else
-          @second_throw = @its_throws[@ball]
-          @ball += 1
-          frame_score = @first_throw + @second_throw
-          # スペアの得点計算には次のフレームの第１投が必要
-          if frame_score == 10
-            score += frame_score + @its_throws[@ball]
-          else
-            score += frame_score
-          end
+          score += handle_second_throw
         end
         current_frame += 1
+      end
+      score
+    end
+
+    def handle_second_throw
+      score = 0
+      @second_throw = @its_throws[@ball]
+      @ball += 1
+      frame_score = @first_throw + @second_throw
+      # スペアの得点計算には次のフレームの第１投が必要
+      if frame_score == 10
+        score += frame_score + @its_throws[@ball]
+      else
+        score += frame_score
       end
       score
     end

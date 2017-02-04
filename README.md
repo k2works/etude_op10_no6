@@ -27,7 +27,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+g = EtudeOp10No6::Game.new # Create instance
+
+g.add(5) #Set score 
+g.add(4)
+
+g.score # Get total score
+g.score_for_frame(1) # Get score by frame
+```
 
 ## Development
 

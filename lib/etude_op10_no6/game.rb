@@ -1,7 +1,6 @@
 module EtudeOp10No6
   class Game
     def initialize
-      @its_score = 0
       @its_current_frame = 1
       @first_throw_in_frame = true
       @its_scorer = Scorer.new
@@ -17,7 +16,6 @@ module EtudeOp10No6
 
     def add(pins)
       @its_scorer.add_throw(pins)
-      @its_score += pins
       adjust_current_frame(pins)
     end
 

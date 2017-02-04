@@ -165,7 +165,6 @@ docker-compose build
 **[⬆ back to top](#構成)**
 
 ## アプリケーション配置
-**[⬆ back to top](#構成)**
 ### Gemのビルド
 ```bash
 vagrant up
@@ -185,6 +184,8 @@ gem build etude_op10_no6.gemspec
 ```bash
 gem push etude_op10_no6-1.0.0.gem 
 ```
+
+**[⬆ back to top](#構成)**
 
 # 参照 #
 + [etude-op-10-no-5](https://github.com/k2works/etude-op10-no5/blob/master/README.md)

@@ -22,15 +22,18 @@ module EtudeOp10No6
     def adjust_current_frame(pins)
       if @first_throw_in_frame == true
         if pins == 10 # ストライク
-          @its_current_frame += 1
+          advance_frame
         else
           @first_throw_in_frame = false
         end
       else
         @first_throw_in_frame = true
-        @its_current_frame += 1
+        advance_frame
       end
-      @its_current_frame = [11,@its_current_frame].min
+    end
+
+    def advance_frame
+      @its_current_frame = [11,@its_current_frame+1].min
     end
 
     def score_for_frame(the_frame)

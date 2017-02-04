@@ -1,17 +1,13 @@
 module EtudeOp10No6
   class Game
     def initialize
-      @its_current_frame = 1
+      @its_current_frame = 0
       @first_throw_in_frame = true
       @its_scorer = Scorer.new
     end
 
     def score
       score_for_frame(@its_current_frame)
-    end
-
-    def get_current_frame
-      @its_current_frame
     end
 
     def add(pins)
@@ -25,7 +21,7 @@ module EtudeOp10No6
 
     private
     def adjust_current_frame(pins)
-      if (last_ball_in_frame(pins))
+      if last_ball_in_frame(pins)
         advance_frame
       else
         @first_throw_in_frame = false

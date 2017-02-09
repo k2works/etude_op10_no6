@@ -1,15 +1,31 @@
 module EtudeOp10No6
   class Game
     def initialize
-      @score = 0
+      @its_score = 0
+      @its_throws = Array.new(21,0)
+      @its_current_throw = 0
     end
 
     def score
-      @score
+      @its_score
     end
 
     def add(pins)
-      @score += pins
+      @its_throws[@its_current_throw] = pins
+      @its_current_throw+=1
+      @its_score+=pins
+    end
+
+    def score_for_frame(the_frame)
+      score = 0
+      ball = 0
+      current_frame = 0
+      while current_frame < the_frame
+        score += @its_throws[ball] + @its_throws[ball+1]
+        ball+=2
+        current_frame+=1
+      end
+      score
     end
   end
 end

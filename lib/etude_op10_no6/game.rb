@@ -21,7 +21,16 @@ module EtudeOp10No6
       ball = 0
       current_frame = 0
       while current_frame < the_frame
-        score += @its_throws[ball] + @its_throws[ball+1]
+        first_throw = @its_throws[ball]
+        second_thow = @its_throws[ball+1]
+        frame_score = first_throw + second_thow
+
+        if frame_score == 10
+          score += frame_score + @its_throws[ball+2]
+        else
+          score += frame_score
+        end
+
         ball+=2
         current_frame+=1
       end

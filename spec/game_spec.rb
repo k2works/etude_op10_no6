@@ -1,9 +1,10 @@
 require "spec_helper"
 
 describe "bowling game" do
+  let(:g) { Game.new }
+
   context "when one throw" do
     it "should be scored" do
-      g = Game.new
       g.add(5)
       expect(g.score).to eq(5)
     end
@@ -11,16 +12,21 @@ describe "bowling game" do
 
   context "when two throws" do
     it "should be scored" do
-      g = Game.new
       g.add(5)
       g.add(4)
       expect(g.score).to eq(9)
+    end
+
+    it "should be scored" do
+      g.add(3)
+      g.add(7)
+      g.add(3)
+      expect(g.score_for_frame(1)).to eq(13)
     end
   end
 
   context "when four throws" do
     it "should be scred" do
-      g = Game.new
       g.add(5)
       g.add(4)
       g.add(7)

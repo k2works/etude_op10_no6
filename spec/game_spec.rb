@@ -17,7 +17,7 @@ describe "bowling game" do
       expect(g.score).to eq(9)
     end
 
-    it "should be scored" do
+    it "should be scored spare" do
       g.add(3)
       g.add(7)
       g.add(3)

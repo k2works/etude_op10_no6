@@ -16,7 +16,10 @@ module EtudeOp10No6
       @its_throws[@its_current_throw] = pins
       @its_current_throw+=1
       @its_score+=pins
+      adjust_current_frame
+    end
 
+    def adjust_current_frame
       if @first_throw == true
         @first_throw = false
         @its_current_frame += 1

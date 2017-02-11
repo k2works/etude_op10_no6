@@ -26,7 +26,7 @@ module EtudeOp10No6
         frame_score = first_throw + second_thow
 
         if frame_score == 10
-          score += frame_score + @its_throws[ball+2]
+          score += frame_score + @its_throws[ball]
         else
           score += frame_score
         end

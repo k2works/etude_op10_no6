@@ -102,7 +102,7 @@ describe "game" do
     context "when perfect game" do
       it "is current frame" do
         perfect_game
-        expect(g.get_current_frame).to eq(10)
+        expect(g.get_current_frame).to eq(11)
       end
     end
   end

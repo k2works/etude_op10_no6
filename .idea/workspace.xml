@@ -3,14 +3,13 @@
   <component name="AutoTestManager">
     <enabled-run-configurations>
       <run-configuration type="RakeRunConfigurationType" name="spec: etude_op10_no6" />
+      <run-configuration type="RSpecRunConfigurationType" name="Run spec 'game_spec': etude_op10_no6" />
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f5718fc-a127-4811-bc21-ff10fce8d1c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etude_op10_no6.iml" afterPath="$PROJECT_DIR$/etude_op10_no6.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/etude_op10_no6/game.rb" afterPath="$PROJECT_DIR$/lib/etude_op10_no6/game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/game_spec.rb" afterPath="$PROJECT_DIR$/spec/game_spec.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +22,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/etude_op10_no6@game__score_when_two_throws_is_scored__etude_op10_no6.coverage" NAME="game .score when two throws is scored: etude_op10_no6 Coverage Results" MODIFIED="1486874854737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
     <SUITE FILE_PATH="coverage/etude_op10_no6@yard__etude_op10_no6.coverage" NAME="yard: etude_op10_no6 Coverage Results" MODIFIED="1485752351233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
-    <SUITE FILE_PATH="coverage/etude_op10_no6@Run_spec__game_spec___etude_op10_no6.coverage" NAME="Run spec 'game_spec': etude_op10_no6 Coverage Results" MODIFIED="1486875665045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
+    <SUITE FILE_PATH="coverage/etude_op10_no6@Run_spec__game_spec___etude_op10_no6.coverage" NAME="Run spec 'game_spec': etude_op10_no6 Coverage Results" MODIFIED="1486876336745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
     <SUITE FILE_PATH="coverage/etude_op10_no6@Run_spec__etude_op10_no6_spec___etude_op10_no6.coverage" NAME="Run spec 'etude_op10_no6_spec': etude_op10_no6 Coverage Results" MODIFIED="1485753684934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
     <SUITE FILE_PATH="coverage/etude_op10_no6@Run_spec__throw_spec___etude_op10_no6.coverage" NAME="Run spec 'throw_spec': etude_op10_no6 Coverage Results" MODIFIED="1485753507262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
     <SUITE FILE_PATH="coverage/etude_op10_no6@game__score_when_four_throws_is_scored__etude_op10_no6.coverage" NAME="game .score when four throws is scored: etude_op10_no6 Coverage Results" MODIFIED="1486875084265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="etude_op10_no6" />
@@ -50,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+            <state relative-caret-position="485">
+              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6/game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="480">
+              <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/lib/etude_op10_no6.rb" />
         <option value="$PROJECT_DIR$/spec/throw_spec.rb" />
         <option value="$PROJECT_DIR$/docs/README.md" />
-        <option value="$PROJECT_DIR$/lib/etude_op10_no6/game.rb" />
         <option value="$PROJECT_DIR$/spec/game_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/etude_op10_no6/game.rb" />
       </list>
     </option>
   </component>
@@ -122,7 +121,7 @@
     <option name="x" value="925" />
     <option name="y" value="23" />
     <option name="width" value="988" />
-    <option name="height" value="1121" />
+    <option name="height" value="1168" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -617,7 +616,7 @@
       <updated>1485750173794</updated>
       <workItem from="1485750177595" duration="77000" />
       <workItem from="1486349954695" duration="861000" />
-      <workItem from="1486873505043" duration="2158000" />
+      <workItem from="1486873505043" duration="2813000" />
     </task>
     <task id="LOCAL-00001" summary="アプリケーション環境">
       <created>1485750759691</created>
@@ -661,53 +660,67 @@
       <option name="project" value="LOCAL" />
       <updated>1486874024098</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Step35">
+      <created>1486875704490</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1486875704490</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Step36">
+      <created>1486875978461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1486875978461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 13h 56m 01s.xml">
-      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 01m 07s.xml">
       <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="game__score_for_frame_when_strike_is_scored__etude_op10_no6 - 2017.02.12 at 13h 55m 44s.xml">
-      <configuration name="game .score_for_frame when strike is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 04m 44s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="game__score_for_frame_when_strike_is_scored__etude_op10_no6 - 2017.02.12 at 13h 59m 04s.xml">
-      <configuration name="game .score_for_frame when strike is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 05m 10s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="game__score_when_four_throws_is_scored__etude_op10_no6 - 2017.02.12 at 13h 53m 12s.xml">
-      <configuration name="game .score when four throws is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 05m 20s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="game__score_when_strike_is_scored__etude_op10_no6 - 2017.02.12 at 13h 57m 53s.xml">
-      <configuration name="game .score when strike is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 05m 32s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="game__score_when_strike_is_scored__etude_op10_no6 - 2017.02.12 at 13h 59m 22s.xml">
-      <configuration name="game .score when strike is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 05m 51s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 05m 52s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 12m 01s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'game_spec'__etude_op10_no6 - 2017.02.12 at 14h 12m 17s.xml">
+      <configuration name="Run spec 'game_spec': etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="game__score_when_strike_is_scored__etude_op10_no6 - 2017.02.12 at 14h 01m 00s.xml">
       <configuration name="game .score when strike is scored: etude_op10_no6" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="spec__etude_op10_no6 - 2017.02.12 at 13h 54m 20s.xml">
-      <configuration name="spec: etude_op10_no6" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__etude_op10_no6 - 2017.02.12 at 13h 55m 53s.xml">
-      <configuration name="spec: etude_op10_no6" configurationId="RakeRunConfigurationType" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6498000" />
+    <option name="totallyTimeSpent" value="7153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="925" y="23" width="988" height="1121" extended-state="0" />
+    <frame x="925" y="23" width="988" height="1168" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25369978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -770,17 +783,12 @@
     <MESSAGE value="YARDをRakeタスクに追加する" />
     <MESSAGE value="ボーリングゲームアプリケーション" />
     <MESSAGE value="refactor spec" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor spec" />
+    <MESSAGE value="Step35" />
+    <MESSAGE value="Step36" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step36" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/etude_op10_no6/game.rb</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -904,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6/version.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -989,18 +990,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6/game.rb">
+    <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="485">
+          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/game_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/etude_op10_no6/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding />
         </state>
       </provider>

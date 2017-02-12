@@ -16,12 +16,16 @@ module EtudeOp10No6
       @its_throws[@its_current_throw] = pins
       @its_current_throw+=1
       @its_score+=pins
-      adjust_current_frame
+      adjust_current_frame(pins)
     end
 
-    def adjust_current_frame
+    def adjust_current_frame(pins)
       if @first_throw == true
-        @first_throw = false
+        if pins == 10
+          @its_current_frame += 1
+        else
+          @first_throw = false
+        end
       else
         @first_throw = true
         @its_current_frame += 1
@@ -34,16 +38,20 @@ module EtudeOp10No6
       current_frame = 0
       while current_frame < the_frame
         first_throw = @its_throws[ball]
-        second_thow = @its_throws[ball+1]
-        frame_score = first_throw + second_thow
-
-        if frame_score == 10
-          score += frame_score + @its_throws[ball]
+        ball += 1
+        if first_throw === 10
+          score += 10 + @its_throws[ball] + @its_throws[ball+1]
         else
-          score += frame_score
-        end
+          second_throw = @its_throws[ball]
+          ball += 1
+          frame_score = first_throw + second_throw
 
-        ball+=2
+          if frame_score == 10
+            score += frame_score + @its_throws[ball]
+          else
+            score += frame_score
+          end
+        end
         current_frame+=1
       end
       score

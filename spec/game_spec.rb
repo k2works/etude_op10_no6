@@ -24,13 +24,6 @@ describe "game" do
         expect(g.score).to eq(18)
       end
     end
-
-    context "when strike" do
-      it "is scored" do
-        strike
-        expect(g.score).to eq(19)
-      end
-    end
   end
 
   describe ".score_for_frame" do

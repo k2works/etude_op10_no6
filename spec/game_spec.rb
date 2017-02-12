@@ -31,6 +31,13 @@ describe "game" do
         expect(g.score).to eq(18)
       end
     end
+
+    context "when strike" do
+      it "is scored" do
+        strike
+        expect(g.score).to eq(19)
+      end
+    end
   end
 
   describe ".score_for_frame" do
@@ -62,6 +69,13 @@ describe "game" do
         g.add(2)
         expect(g.score_for_frame(1)).to eq(13)
         expect(g.score_for_frame(2)).to eq(18)
+      end
+    end
+
+    context "when strike" do
+      it "is scored" do
+        strike
+        expect(g.score_for_frame(1)).to eq(19)
       end
     end
   end
@@ -98,5 +112,19 @@ describe "game" do
         expect(g.get_current_frame).to eq(3)
       end
     end
+
+    context "when strike" do
+      it "is scored" do
+        strike
+        expect(g.get_current_frame).to eq(3)
+      end
+    end
+  end
+
+  private
+  def strike
+    g.add(10)
+    g.add(3)
+    g.add(6)
   end
 end

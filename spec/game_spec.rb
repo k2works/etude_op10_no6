@@ -6,28 +6,21 @@ describe "game" do
   describe ".score" do
     context "when two throws" do
       it "is scored" do
-        g.add(5)
-        g.add(4)
+        tow_throws
         expect(g.score).to eq(9)
       end
     end
 
     context "when four throws" do
       it "is scored" do
-        g.add(5)
-        g.add(4)
-        g.add(7)
-        g.add(2)
+        four_throws
         expect(g.score).to eq(18)
       end
     end
 
     context "when after spare" do
       it "is scored" do
-        g.add(3)
-        g.add(7)
-        g.add(3)
-        g.add(2)
+        spare_4throws
         expect(g.score).to eq(18)
       end
     end
@@ -43,19 +36,14 @@ describe "game" do
   describe ".score_for_frame" do
     context "when spare" do
       it "is scored by frame" do
-        g.add(3)
-        g.add(7)
-        g.add(3)
+        spare_3thorws
         expect(g.score_for_frame(1)).to eq(13)
       end
     end
 
     context "when four throws" do
       it "is scored by farme" do
-        g.add(5)
-        g.add(4)
-        g.add(7)
-        g.add(2)
+        four_throws
         expect(g.score_for_frame(1)).to eq(9)
         expect(g.score_for_frame(2)).to eq(18)
       end
@@ -63,10 +51,7 @@ describe "game" do
 
     context "when after spare" do
       it "is scored by frame" do
-        g.add(3)
-        g.add(7)
-        g.add(3)
-        g.add(2)
+        spare_4throws
         expect(g.score_for_frame(1)).to eq(13)
         expect(g.score_for_frame(2)).to eq(18)
       end
@@ -90,25 +75,19 @@ describe "game" do
 
     context "when two throw" do
       it "is current frame" do
-        g.add(5)
-        g.add(4)
+        tow_throws
         expect(g.get_current_frame).to eq(2)
       end
     end
 
     context "when after spare" do
       it "is current frame" do
-        g.add(3)
-        g.add(7)
-        g.add(3)
+        spare_3thorws
         expect(g.get_current_frame).to eq(2)
       end
 
       it "is current frame" do
-        g.add(3)
-        g.add(7)
-        g.add(3)
-        g.add(2)
+        spare_4throws
         expect(g.get_current_frame).to eq(3)
       end
     end
@@ -122,6 +101,29 @@ describe "game" do
   end
 
   private
+  def tow_throws
+    g.add(5)
+    g.add(4)
+  end
+
+  def four_throws
+    g.add(5)
+    g.add(4)
+    g.add(7)
+    g.add(2)
+  end
+
+  def spare_3thorws
+    g.add(3)
+    g.add(7)
+    g.add(3)
+  end
+
+  def spare_4throws
+    spare_3thorws
+    g.add(2)
+  end
+
   def strike
     g.add(10)
     g.add(3)

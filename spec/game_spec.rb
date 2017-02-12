@@ -28,6 +28,16 @@ describe "game" do
         expect(g.score).to eq(18)
       end
     end
+
+    context "when after spare" do
+      it "is scored" do
+        g.add(3)
+        g.add(7)
+        g.add(3)
+        g.add(2)
+        expect(g.score).to eq(18)
+      end
+    end
   end
 
   describe ".score_for_frame" do

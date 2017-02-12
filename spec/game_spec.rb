@@ -4,13 +4,6 @@ describe "game" do
   let(:g) { Game.new }
 
   describe ".score" do
-    context "when one throw" do
-      it "is scored" do
-        g.add(5)
-        expect(g.score).to eq(5)
-      end
-    end
-
     context "when two throws" do
       it "is scored" do
         g.add(5)

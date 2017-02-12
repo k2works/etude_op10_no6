@@ -24,6 +24,13 @@ describe "game" do
         expect(g.score).to eq(18)
       end
     end
+
+    context "when perfect game" do
+      it "is scored" do
+        perfect_game
+        expect(g.score).to eq(300)
+      end
+    end
   end
 
   describe ".score_for_frame" do
@@ -86,9 +93,16 @@ describe "game" do
     end
 
     context "when strike" do
-      it "is scored" do
+      it "is current frame" do
         strike
         expect(g.get_current_frame).to eq(3)
+      end
+    end
+
+    context "when perfect game" do
+      it "is current frame" do
+        perfect_game
+        expect(g.get_current_frame).to eq(10)
       end
     end
   end
@@ -121,5 +135,11 @@ describe "game" do
     g.add(10)
     g.add(3)
     g.add(6)
+  end
+
+  def perfect_game
+    12.times do
+      g.add(10)
+    end
   end
 end

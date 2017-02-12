@@ -31,6 +31,18 @@ describe "game" do
         expect(g.score).to eq(300)
       end
     end
+
+    context "when last frame spare" do
+      it "is scored" do
+        11.times do
+          g.add(0)
+        end
+        g.add(2)
+        g.add(8)
+        g.add(10)
+        expect(g.score).to eq(20)
+      end
+    end
   end
 
   describe ".score_for_frame" do

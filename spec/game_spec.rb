@@ -68,6 +68,16 @@ describe "game" do
         expect(g.score).to eq(133)
       end
     end
+
+    context "when heart brake game" do
+      it "is scored" do
+        11.times do
+          g.add(10)
+        end
+        g.add(9)
+        expect(g.score).to eq(299)
+      end
+    end
   end
 
   describe ".score_for_frame" do

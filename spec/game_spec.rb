@@ -78,6 +78,19 @@ describe "game" do
         expect(g.score).to eq(299)
       end
     end
+
+    context "when tenth frame spare" do
+      it "is scored" do
+        9.times do
+          g.add(10)
+        end
+        g.add(9)
+        g.add(1)
+        g.add(1)
+        expect(g.score).to eq(270)
+      end
+
+    end
   end
 
   describe ".score_for_frame" do

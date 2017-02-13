@@ -39,8 +39,8 @@ module EtudeOp10No6
       current_frame = 0
       while current_frame < the_frame
         @first_throw = @its_throws[@ball]
-        @ball += 1
         if @first_throw === 10
+          @ball += 1
           score += 10 + @its_throws[@ball] + @its_throws[@ball+1]
         else
           score += handle_second_throw
@@ -57,13 +57,13 @@ module EtudeOp10No6
     private
     def handle_second_throw
       score = 0
-      @second_throw = @its_throws[@ball]
-      @ball += 1
+      @second_throw = @its_throws[@ball+1]
       frame_score = @first_throw + @second_throw
-
       if frame_score == 10
+        @ball += 2
         score += frame_score + @its_throws[@ball]
       else
+        @ball += 2
         score += frame_score
       end
       score

@@ -18,13 +18,13 @@ module EtudeOp10No6
     def adjust_current_frame(pins)
       if @its_first_throw == true
         if pins == 10
-          @its_current_frame += 1
+          advance_frame
         else
           @its_first_throw = false
         end
       else
         @its_first_throw = true
-        @its_current_frame += 1
+        advance_frame
       end
       @its_current_frame = [11,@its_current_frame].min
     end
@@ -35,6 +35,11 @@ module EtudeOp10No6
 
     def get_current_frame
       @its_current_frame
+    end
+
+    private
+    def advance_frame
+      @its_current_frame = [11,@its_current_frame+1].min
     end
   end
 end

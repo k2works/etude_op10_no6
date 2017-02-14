@@ -125,48 +125,6 @@ describe "game" do
     end
   end
 
-  describe ".get_current_frame" do
-    context "when one throw" do
-      it "is current frame" do
-        g.add(5)
-        expect(g.get_current_frame).to eq(1)
-      end
-    end
-
-    context "when two throw" do
-      it "is current frame" do
-        tow_throws
-        expect(g.get_current_frame).to eq(2)
-      end
-    end
-
-    context "when after spare" do
-      it "is current frame" do
-        spare_3thorws
-        expect(g.get_current_frame).to eq(2)
-      end
-
-      it "is current frame" do
-        spare_4throws
-        expect(g.get_current_frame).to eq(3)
-      end
-    end
-
-    context "when strike" do
-      it "is current frame" do
-        strike
-        expect(g.get_current_frame).to eq(3)
-      end
-    end
-
-    context "when perfect game" do
-      it "is current frame" do
-        perfect_game
-        expect(g.get_current_frame).to eq(11)
-      end
-    end
-  end
-
   private
   def tow_throws
     g.add(5)

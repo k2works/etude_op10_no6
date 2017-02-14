@@ -39,10 +39,14 @@ module EtudeOp10No6
       current_frame = 0
       while current_frame < the_frame
         if strike
-          @ball += 1
+          @ball+=1
           score += 10 + next_two_balls
+        elsif spare
+          @ball+=2
+          score += 10 + next_ball
         else
-          score += handle_second_throw
+          score += two_balls_in_frame
+          @ball+=2
         end
         current_frame+=1
       end
@@ -60,18 +64,6 @@ module EtudeOp10No6
 
     def strike
       @its_throws[@ball] === 10
-    end
-
-    def handle_second_throw
-      score = 0
-      if spare
-        @ball += 2
-        score += 10 + next_ball
-      else
-        score += two_balls_in_frame
-        @ball += 2
-      end
-      score
     end
 
     def two_balls_in_frame

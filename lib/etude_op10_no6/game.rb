@@ -15,20 +15,6 @@ module EtudeOp10No6
       adjust_current_frame(pins)
     end
 
-    def adjust_current_frame(pins)
-      if @its_first_throw == true
-        if pins == 10
-          advance_frame
-        else
-          @its_first_throw = false
-        end
-      else
-        @its_first_throw = true
-        advance_frame
-      end
-      @its_current_frame = [11,@its_current_frame].min
-    end
-
     def score_for_frame(the_frame)
       @its_scorer.score_for_frame(the_frame)
     end
@@ -38,6 +24,27 @@ module EtudeOp10No6
     end
 
     private
+    def adjust_current_frame(pins)
+      if @its_first_throw == true
+        if adjust_frame_for_strike(pins) == false
+          @its_first_throw = false
+        end
+      else
+        @its_first_throw = true
+        advance_frame
+      end
+      @its_current_frame = [11,@its_current_frame].min
+    end
+
+    def adjust_frame_for_strike(pins)
+      if pins == 10
+        advance_frame
+        true
+      else
+        false
+      end
+    end
+
     def advance_frame
       @its_current_frame = [11,@its_current_frame+1].min
     end

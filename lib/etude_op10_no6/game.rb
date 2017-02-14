@@ -21,12 +21,16 @@ module EtudeOp10No6
 
     private
     def adjust_current_frame(pins)
-      if (strike(pins) || !@its_first_throw)
+      if (last_ball_in_frame(pins))
         advance_frame
         @its_first_throw = true
       else
         @its_first_throw = false
       end
+    end
+
+    def last_ball_in_frame(pins)
+      strike(pins) || !@its_first_throw
     end
 
     def strike(pins)
